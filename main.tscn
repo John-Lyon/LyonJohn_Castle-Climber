@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://bfp0810cifmx7"]
 
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Addons/proto_controller/proto_controller.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bn8l2drfdonf0" path="res://portal.gd" id="2_0xm2m"]
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_top_color = Color(0.52655846, 0.7808791, 0.91297984, 1)
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -14,6 +17,10 @@ background_energy_multiplier = 0.54
 sky = SubResource("Sky_ig7tw")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_h2yge"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_1bvp3"]
 
 [node name="Main" type="Node3D" unique_id=947953876]
 
@@ -54,7 +61,7 @@ transform = Transform3D(-5.3195716e-08, -0.11544242, 2.8370279e-08, 0, -2.614379
 operation = 2
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=361755260]
-transform = Transform3D(4.986485, 0, 0, 0, 7.1130233, 0, 0, 0, 4.898635, 0, 7.3519707, -1.1726853)
+transform = Transform3D(4.9841604, 0, 0, 0, 7.1097074, 0, 0, 0, 4.896351, -0.001308322, 7.3581104, -1.1729127)
 use_collision = true
 height = 2.0499115
 
@@ -177,45 +184,45 @@ radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D19" type="CSGCylinder3D" parent="." unique_id=2020554355]
-transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, -0.88383985, 3.7702363, -0.37147623)
+transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, -0.2532546, 3.8784497, -0.86758804)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D20" type="CSGCylinder3D" parent="." unique_id=1295561038]
-transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, -1.35035, 3.9391868, -0.7079503)
+transform = Transform3D(3.4600115, 0, 0.082635835, 0, 0.27572307, 0, -1.2332795, 0, 0.23183793, 0.9556351, 4.069586, -1.1039091)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D21" type="CSGCylinder3D" parent="." unique_id=1748276855]
-transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, -1.5795856, 4.208132, -1.235714)
+transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, 1.5530003, 4.2363963, -1.7193042)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D23" type="CSGCylinder3D" parent="." unique_id=1039532162]
-transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, -1.5795856, 4.486459, -1.8428386)
+transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, 1.211508, 4.512068, -1.9134766)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D24" type="CSGCylinder3D" parent="." unique_id=804483923]
-transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, -0.9161377, 4.6862326, -2.109684)
+transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, 1.1570191, 4.748498, -2.2724729)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D25" type="CSGCylinder3D" parent="." unique_id=117253547]
-transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, -0.2537297, 4.9668193, -2.109684)
+transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, 0.752733, 4.9173093, -2.109684)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D26" type="CSGCylinder3D" parent="." unique_id=1114208297]
-transform = Transform3D(1, 0, 0, 0, 0.2757231, 0, 0, 0, 1, 0.42770004, 5.177508, -2.109684)
+transform = Transform3D(2.296637, 0.08364772, 0, -1.5346217, 0.12518293, 0, 0, 0, 0.31457856, 0.11561549, 5.177508, -2.180769)
 use_collision = true
-radius = 0.18896484
+radius = 0.14355469
 height = 0.4338379
 
 [node name="CSGCylinder3D27" type="CSGCylinder3D" parent="." unique_id=977860536]
@@ -243,7 +250,7 @@ radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D37" type="CSGCylinder3D" parent="." unique_id=1403306918]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.4997694, 6.3926053, -0.21600568)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.64300007, 6.3926053, -0.21600568)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
@@ -255,7 +262,7 @@ radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D39" type="CSGCylinder3D" parent="." unique_id=1621054130]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.71593773, 6.637619, 0.21241057)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.618637, 6.6519375, 0.21241057)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
@@ -327,117 +334,129 @@ radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D62" type="CSGCylinder3D" parent="." unique_id=2305775]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -0.13717288, 8.558859, -3.1296883)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -0.13717288, 8.339782, -3.1296883)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D63" type="CSGCylinder3D" parent="." unique_id=342625657]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.47079766, 8.580354, -3.056297)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.47079766, 8.15601, -3.056297)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D64" type="CSGCylinder3D" parent="." unique_id=1587618403]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.9248259, 8.649325, -2.8747947)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.9248259, 7.9909544, -2.8747947)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D65" type="CSGCylinder3D" parent="." unique_id=313751944]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.2870083, 8.769549, -2.6453626)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.2870083, 8.173009, -2.6453626)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D66" type="CSGCylinder3D" parent="." unique_id=1655329599]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.5978825, 8.873242, -2.316337)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.5978825, 8.376814, -2.316337)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D67" type="CSGCylinder3D" parent="." unique_id=327800001]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.7602568, 8.974615, -1.8701482)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.7602568, 8.545994, -1.8701482)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D68" type="CSGCylinder3D" parent="." unique_id=1346826107]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.7602568, 9.096998, -1.456859)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.7602568, 8.689724, -1.456859)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D69" type="CSGCylinder3D" parent="." unique_id=560443977]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.7602568, 9.287175, -0.99493605)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.7602568, 8.894865, -0.99493605)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D70" type="CSGCylinder3D" parent="." unique_id=1743985601]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.5384892, 9.411011, -0.56498575)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.5384892, 9.046511, -0.56498575)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D71" type="CSGCylinder3D" parent="." unique_id=1434398853]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.4063184, 9.578627, -0.14707458)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.4063184, 9.163686, -0.14707458)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D72" type="CSGCylinder3D" parent="." unique_id=1631840062]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.98326004, 9.702732, 0.04145494)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.98326004, 9.337495, -0.13949737)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D73" type="CSGCylinder3D" parent="." unique_id=1766769000]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.6615014, 9.823815, 0.1914933)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.6615014, 9.517156, 0.1914933)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D74" type="CSGCylinder3D" parent="." unique_id=1003573444]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.3419044, 9.962772, 0.37989038)
+transform = Transform3D(1.4109709, 0, 0, 0, 0.14385931, 0, 0, 0, 6.416782, 0.3419044, 9.607791, -1.1299038)
 use_collision = true
 radius = 0.18896484
-height = 0.4338379
+height = 0.90146637
 
 [node name="CSGCylinder3D75" type="CSGCylinder3D" parent="." unique_id=2102950867]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -0.04084876, 10.082275, 0.37989038)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.012945818, 0.79320663, 0, -0.14327563, 0.07167101, 0.34450817, 9.850574, -0.41054094)
 use_collision = true
-radius = 0.18896484
+radius = 0.33398438
+height = 0.3380127
+
+[node name="CSGCylinder3D144" type="CSGCylinder3D" parent="." unique_id=103780341]
+transform = Transform3D(0.8033322, 0, 0, 0, 0.012945818, 0.79320663, 0, -0.14327563, 0.07167101, 0.35687894, 9.84526, -0.8885237)
+use_collision = true
+radius = 0.3720703
+height = 0.4338379
+
+[node name="CSGCylinder3D145" type="CSGCylinder3D" parent="." unique_id=252916827]
+transform = Transform3D(0.8033322, 0, 0, 0, 0.012945818, 0.79320663, 0, -0.14327563, 0.07167101, 0.34577096, 9.875889, -1.4523922)
+use_collision = true
+radius = 0.3491211
+height = 0.4338379
+
+[node name="CSGCylinder3D146" type="CSGCylinder3D" parent="." unique_id=856286336]
+transform = Transform3D(0.8033322, 0, 0, 0, 0.012945818, 0.79320663, 0, -0.14327563, 0.07167101, 0.33746332, 9.852731, -1.922358)
+use_collision = true
+radius = 0.3125
 height = 0.4338379
 
 [node name="CSGCylinder3D76" type="CSGCylinder3D" parent="." unique_id=271980514]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -0.4338341, 10.181659, 0.24375477)
+transform = Transform3D(3.8435783, 0.16189915, 0.42609537, -2.1785421, 0.4001784, 0, -2.4339423, -0.10252247, 0.67287165, -0.4132375, 9.888188, -2.0110254)
 use_collision = true
-radius = 0.18896484
-height = 0.4338379
+radius = 0.16064453
+height = 0.16210938
 
 [node name="CSGCylinder3D77" type="CSGCylinder3D" parent="." unique_id=82251789]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -0.8201474, 10.289075, 0.24375477)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -1.0736291, 10.32137, -1.4242475)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D78" type="CSGCylinder3D" parent="." unique_id=352083852]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -1.1287714, 10.3857155, -0.00851059)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -1.1287714, 10.420241, -1.1155236)
 use_collision = true
 radius = 0.13427734
 height = 0.4338379
 
 [node name="CSGCylinder3D79" type="CSGCylinder3D" parent="." unique_id=1439739881]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -1.3234437, 10.492549, -0.2791533)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -1.1586615, 10.573755, -0.8909527)
 use_collision = true
 radius = 0.13427734
-height = 0.4338379
-
-[node name="CSGCylinder3D80" type="CSGCylinder3D" parent="." unique_id=1858688913]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, -1.3234437, 10.588173, -0.5041598)
-use_collision = true
-radius = 0.08300781
 height = 0.4338379
 
 [node name="CSGCylinder3D81" type="CSGCylinder3D" parent="." unique_id=1992473590]
@@ -507,43 +526,31 @@ radius = 0.08300781
 height = 0.4338379
 
 [node name="CSGCylinder3D93" type="CSGCylinder3D" parent="." unique_id=2116863517]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.42803037, 11.709452, -2.4480762)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.23614794, 11.668693, -2.0248175)
 use_collision = true
 radius = 0.08300781
 height = 0.4338379
 
 [node name="CSGCylinder3D94" type="CSGCylinder3D" parent="." unique_id=437022545]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.6171725, 11.803209, -2.2940762)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.5249496, 11.803209, -2.0308204)
 use_collision = true
 radius = 0.08300781
 height = 0.4338379
 
 [node name="CSGCylinder3D95" type="CSGCylinder3D" parent="." unique_id=1074596594]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.80335456, 11.902697, -2.2110648)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 0.92171973, 11.902697, -1.9446311)
 use_collision = true
 radius = 0.08300781
 height = 0.4338379
 
 [node name="CSGCylinder3D96" type="CSGCylinder3D" parent="." unique_id=480625892]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.0526516, 11.963511, -2.2110648)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.3492147, 11.963511, -2.2110648)
 use_collision = true
 radius = 0.08300781
 height = 0.4338379
 
-[node name="CSGCylinder3D97" type="CSGCylinder3D" parent="." unique_id=1491873919]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.2955524, 12.046843, -2.2110648)
-use_collision = true
-radius = 0.057128906
-height = 0.4338379
-
-[node name="CSGCylinder3D98" type="CSGCylinder3D" parent="." unique_id=130700494]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.4640255, 12.115917, -2.2110648)
-use_collision = true
-radius = 0.030761719
-height = 0.28771973
-
 [node name="CSGCylinder3D99" type="CSGCylinder3D" parent="." unique_id=1718307292]
-transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.5369483, 12.179822, -2.071619)
+transform = Transform3D(0.8033322, 0, 0, 0, 0.14385931, 0, 0, 0, 0.79643804, 1.5369483, 12.162265, -2.071619)
 use_collision = true
 radius = 0.030761719
 height = 0.25549316
@@ -555,27 +562,27 @@ radius = 0.18603516
 height = 0.25549316
 
 [node name="CSGCylinder3D101" type="CSGCylinder3D" parent="." unique_id=206417813]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 1.785254, 12.352048, -0.64524347)
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 1.7204055, 12.378445, -0.5834892)
 use_collision = true
-radius = 0.18603516
+radius = 0.05078125
 height = 0.25549316
 
 [node name="CSGCylinder3D102" type="CSGCylinder3D" parent="." unique_id=1766132957]
 transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 1.58512, 12.424393, -0.21751833)
 use_collision = true
-radius = 0.18603516
+radius = 0.0390625
 height = 0.25549316
 
 [node name="CSGCylinder3D103" type="CSGCylinder3D" parent="." unique_id=1603038209]
 transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 1.257716, 12.465942, 0.14132947)
 use_collision = true
-radius = 0.18603516
+radius = 0.04248047
 height = 0.25549316
 
 [node name="CSGCylinder3D104" type="CSGCylinder3D" parent="." unique_id=524099645]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 0.90940416, 12.588436, 0.46329695)
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 0.90940416, 12.588436, 0.34280938)
 use_collision = true
-radius = 0.18603516
+radius = 0.053710938
 height = 0.25549316
 
 [node name="CSGCylinder3D105" type="CSGCylinder3D" parent="." unique_id=726625641]
@@ -593,19 +600,19 @@ height = 0.25549316
 [node name="CSGCylinder3D107" type="CSGCylinder3D" parent="." unique_id=448163331]
 transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.36471155, 12.972361, 0.7956754)
 use_collision = true
-radius = 0.18603516
+radius = 0.06933594
 height = 0.25549316
 
 [node name="CSGCylinder3D108" type="CSGCylinder3D" parent="." unique_id=1571686401]
 transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.7240294, 13.075129, 0.4565001)
 use_collision = true
-radius = 0.18603516
+radius = 0.03857422
 height = 0.25549316
 
 [node name="CSGCylinder3D109" type="CSGCylinder3D" parent="." unique_id=2120464535]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.85457826, 13.184302, 0.076265365)
+transform = Transform3D(0.8170636, 0, -0.025290659, -0.00596356, 0.12447015, -0.8710871, 0.010290993, 0.07212961, 1.503188, -0.85457826, 13.188017, 0.08909288)
 use_collision = true
-radius = 0.18603516
+radius = 0.078125
 height = 0.25549316
 
 [node name="CSGCylinder3D110" type="CSGCylinder3D" parent="." unique_id=2044750795]
@@ -626,12 +633,6 @@ use_collision = true
 radius = 0.18603516
 height = 0.25549316
 
-[node name="CSGCylinder3D113" type="CSGCylinder3D" parent="." unique_id=565543474]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.9837856, 13.678901, -1.0727141)
-use_collision = true
-radius = 0.122558594
-height = 0.25549316
-
 [node name="CSGCylinder3D114" type="CSGCylinder3D" parent="." unique_id=1668914620]
 transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.67633754, 13.765888, -1.0727141)
 use_collision = true
@@ -639,25 +640,13 @@ radius = 0.122558594
 height = 0.25549316
 
 [node name="CSGCylinder3D115" type="CSGCylinder3D" parent="." unique_id=1947402245]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.31656694, 13.864654, -1.0727141)
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.31656694, 13.864654, -0.8690126)
 use_collision = true
 radius = 0.122558594
 height = 0.25549316
 
-[node name="CSGCylinder3D116" type="CSGCylinder3D" parent="." unique_id=1451974003]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.31656694, 13.951068, -0.74668026)
-use_collision = true
-radius = 0.08300781
-height = 0.25549316
-
 [node name="CSGCylinder3D117" type="CSGCylinder3D" parent="." unique_id=2062417900]
 transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.31656694, 14.03964, -0.46333218)
-use_collision = true
-radius = 0.08300781
-height = 0.25549316
-
-[node name="CSGCylinder3D118" type="CSGCylinder3D" parent="." unique_id=1056718426]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.31656694, 14.115966, -0.22422066)
 use_collision = true
 radius = 0.08300781
 height = 0.25549316
@@ -669,46 +658,34 @@ radius = 0.08300781
 height = 0.25549316
 
 [node name="CSGCylinder3D120" type="CSGCylinder3D" parent="." unique_id=1295486983]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.31656694, 14.245136, 0.20640305)
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.31656694, 14.140959, 0.20640305)
 use_collision = true
 radius = 0.059570313
 height = 0.25549316
 
 [node name="CSGCylinder3D121" type="CSGCylinder3D" parent="." unique_id=130382595]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.17511457, 14.307186, 0.33937833)
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.17511457, 14.243065, 0.33937833)
 use_collision = true
 radius = 0.059570313
 height = 0.25549316
 
 [node name="CSGCylinder3D122" type="CSGCylinder3D" parent="." unique_id=1923188067]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.10064112, 14.37535, 0.5066578)
-use_collision = true
-radius = 0.059570313
-height = 0.25549316
-
-[node name="CSGCylinder3D123" type="CSGCylinder3D" parent="." unique_id=1791571936]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.10064112, 14.427061, 0.668494)
-use_collision = true
-radius = 0.059570313
-height = 0.25549316
-
-[node name="CSGCylinder3D124" type="CSGCylinder3D" parent="." unique_id=122303214]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.13785553, 14.488504, 0.78834236)
-use_collision = true
-radius = 0.059570313
-height = 0.25549316
-
-[node name="CSGCylinder3D125" type="CSGCylinder3D" parent="." unique_id=1046267278]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.010964572, 14.529133, 0.8004354)
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, -0.052817233, 14.301859, 0.5066578)
 use_collision = true
 radius = 0.059570313
 height = 0.25549316
 
 [node name="CSGCylinder3D126" type="CSGCylinder3D" parent="." unique_id=215745779]
-transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 0.11951229, 14.580335, 0.70460963)
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 0.03142169, 14.395307, 0.70460963)
 use_collision = true
-radius = 0.059570313
+radius = 0.080566406
 height = 0.25549316
+
+[node name="CSGCylinder3D147" type="CSGCylinder3D" parent="." unique_id=781391881]
+transform = Transform3D(0.8032471, 0, -0.011592579, 0, 0.14385931, 0, 0.011692927, 0, 0.7963537, 0.03673564, 14.5304, 0.8899309)
+use_collision = true
+radius = 0.09082031
+height = 0.16680908
 
 [node name="CSGCylinder3D90" type="CSGCylinder3D" parent="." unique_id=854321181]
 transform = Transform3D(2.3082879, 0, 0, 0, 0.14385931, 0, 0, 0, 8.395244, 1.8468753, 12.224459, -1.2953507)
@@ -789,37 +766,38 @@ radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D32" type="CSGCylinder3D" parent="." unique_id=1794475167]
-transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.9761341, 6.0433745, -1.4076862)
+transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.700505, 6.0433745, -1.4076862)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D33" type="CSGCylinder3D" parent="." unique_id=1578094547]
-transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 2.0420945, 6.113074, -1.2006936)
+transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.3482301, 6.113074, -1.2006936)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D34" type="CSGCylinder3D" parent="." unique_id=1720737884]
-transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.9509361, 6.186581, -0.89396924)
+transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.5268297, 6.186581, -0.89396924)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D35" type="CSGCylinder3D" parent="." unique_id=443465225]
-transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.8893179, 6.2569904, -0.67280316)
+transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.2668383, 6.2569904, -0.67280316)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D36" type="CSGCylinder3D" parent="." unique_id=1610775211]
-transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 1.7660394, 6.317031, -0.5026895)
+transform = Transform3D(0.32152182, 0, 0, 0, 0.14385931, 0, 0, 0, 0.3015269, 0.9572512, 6.317031, -0.5026895)
 use_collision = true
 radius = 0.18896484
 height = 0.4338379
 
 [node name="CSGCylinder3D22" type="CSGCylinder3D" parent="." unique_id=1890539116]
 transform = Transform3D(2.7335625, 0, 0, 0, 0.062101882, 0, 0, 0, 0.94360405, -0.033221245, 5.3887415, -2.8809323)
+use_collision = true
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=975344447]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5994617, 0.70522, 0.7070404)
@@ -959,84 +937,133 @@ light_energy = 0.3
 
 [node name="CSGCylinder3D127" type="CSGCylinder3D" parent="." unique_id=981105409]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.82762, -1.2432978)
+use_collision = true
 height = 2.3688889
 
 [node name="CSGCylinder3D128" type="CSGCylinder3D" parent="." unique_id=387494840]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31701595, 14.66676, -0.19514108)
+use_collision = true
 radius = 0.24951172
 height = 0.059798717
 
 [node name="CSGCylinder3D129" type="CSGCylinder3D" parent="." unique_id=1901197698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19823676, 14.830457, -0.19514108)
+use_collision = true
 radius = 0.24951172
 height = 0.059798717
 
 [node name="CSGCylinder3D130" type="CSGCylinder3D" parent="." unique_id=884838221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4263088, 15.068368, -0.637535)
+use_collision = true
 radius = 0.24951172
 height = 0.059798717
 
 [node name="CSGCylinder3D131" type="CSGCylinder3D" parent="." unique_id=849693690]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.66395444, 15.256481, -1.1996865)
+use_collision = true
 radius = 0.24951172
 height = 0.059798717
 
 [node name="CSGCylinder3D132" type="CSGCylinder3D" parent="." unique_id=297828906]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.41449773, 15.412908, -1.7180784)
+use_collision = true
 radius = 0.24951172
 height = 0.059798717
 
 [node name="CSGCylinder3D133" type="CSGCylinder3D" parent="." unique_id=77016375]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.007869661, 15.598379, -1.8257793)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D134" type="CSGCylinder3D" parent="." unique_id=801475440]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4273937, 15.744476, -1.6319711)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D135" type="CSGCylinder3D" parent="." unique_id=1823382072]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55778587, 15.960474, -1.3089345)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D136" type="CSGCylinder3D" parent="." unique_id=710195630]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42329168, 16.12095, -0.985165)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D137" type="CSGCylinder3D" parent="." unique_id=2141449302]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13602191, 16.27154, -0.7295741)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D138" type="CSGCylinder3D" parent="." unique_id=751514629]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27837557, 16.406738, -0.78374135)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D139" type="CSGCylinder3D" parent="." unique_id=689040543]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5460776, 16.523886, -1.0528369)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D140" type="CSGCylinder3D" parent="." unique_id=1236120522]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5460776, 16.686804, -1.3965732)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D141" type="CSGCylinder3D" parent="." unique_id=632220597]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32128215, 16.817234, -1.6516397)
+use_collision = true
 radius = 0.16308594
 height = 0.059798717
 
 [node name="CSGCylinder3D142" type="CSGCylinder3D" parent="." unique_id=957941376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07904327, 16.927132, -1.7475121)
+use_collision = true
 radius = 0.09033203
 height = 0.059798717
 
 [node name="CSGCylinder3D143" type="CSGCylinder3D" parent="." unique_id=1546801033]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011027813, 17.054089, -1.2613121)
+use_collision = true
 radius = 0.09033203
 height = 0.08116889
+
+[node name="ProtoController" parent="." unique_id=1608051018 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(-0.06709233, 0, -0.99774677, 0, 1, 0, 0.99774677, 0, -0.06709233, -4.1069274, 0.6211453, 3.9419878)
+can_sprint = true
+can_freefly = true
+input_left = "left"
+input_right = "right"
+input_forward = "forward"
+input_back = "backward"
+input_jump = "jump"
+input_freefly = "fly"
+
+[node name="portal" type="Area3D" parent="." unique_id=1705853912 node_paths=PackedStringArray("connect_portal")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.012987655, 17.117767, -1.2631662)
+script = ExtResource("2_0xm2m")
+connect_portal = NodePath("../portal2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="portal" unique_id=126166204]
+shape = SubResource("SphereShape3D_h2yge")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="portal" unique_id=1840240443]
+transform = Transform3D(0.2809951, 0, 0, 0, 0.48284414, 0, 0, 0, 0.26092437, 0, -0.06542969, 0)
+mesh = SubResource("SphereMesh_1bvp3")
+
+[node name="portal2" type="Area3D" parent="." unique_id=1135980170]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -3.6452398, 1.5039127, 3.9157727)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="portal2" unique_id=1856160936]
+transform = Transform3D(-0.14818919, 0, -0.988959, 0, 1, 0, 0.988959, 0, -0.14818919, 0, 0, 0)
+shape = SubResource("SphereShape3D_h2yge")
+
+[connection signal="body_entered" from="portal" to="portal" method="_on_body_entered"]
