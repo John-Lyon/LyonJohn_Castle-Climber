@@ -24,58 +24,58 @@ glow_enabled = true
 
 [node name="Main" type="Node3D" unique_id=947953876]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1072753425]
+[node name="sunlight" type="DirectionalLight3D" parent="." unique_id=1072753425]
 transform = Transform3D(0.2707159, -0.019508323, -0.9624616, 0.96126246, 0.059318148, 0.26917624, 0.051840257, -0.9980485, 0.03481099, -3.996741, 17.927177, 0)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=718557757]
 environment = SubResource("Environment_0xm2m")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=724530666]
+[node name="Castle walls" type="CSGBox3D" parent="." unique_id=724530666]
 transform = Transform3D(4, 0, 0, 0, 0.3, 0, 0, 0, 8.1, -0.71837187, 0, 0.45950824)
 use_collision = true
 size = Vector3(2.0526366, 1, 1.1655273)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D" unique_id=1250097]
+[node name="CSGBox3D" type="CSGBox3D" parent="Castle walls" unique_id=1250097]
 transform = Transform3D(0.26999423, 0, 0, 0, 2.879999, 0, 0, 0, 0.999997, 1.0138314, 1.6666663, -0.007812485)
 size = Vector3(0.1, 1, 1.1621094)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D" unique_id=714180954]
+[node name="CSGBox3D2" type="CSGBox3D" parent="Castle walls" unique_id=714180954]
 transform = Transform3D(0.2699948, 0, 0, 0, 2.879999, 0, 0, 0, 0.999997, -1.0123171, 1.6666663, 0.005004883)
 size = Vector3(0.1, 1, 1.1555176)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="CSGBox3D" unique_id=704264126]
+[node name="CSGBox3D3" type="CSGBox3D" parent="Castle walls" unique_id=704264126]
 transform = Transform3D(-5.6688103e-09, 0, 1.7618409, 0, 2.879999, 0, -0.12968838, 0, -7.701332e-08, -0.0068742186, 1.6666663, -0.5746568)
 size = Vector3(0.1, 1, 1.1555786)
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="CSGBox3D" unique_id=1275310536]
+[node name="CSGBox3D4" type="CSGBox3D" parent="Castle walls" unique_id=1275310536]
 transform = Transform3D(-5.6688028e-09, 0, 1.7618389, 0, 2.879999, 0, -0.12968838, 0, -7.701332e-08, 0.004685968, 1.6666663, 0.576746)
 size = Vector3(0.1, 1, 1.1573486)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="CSGBox3D" unique_id=1384336636]
+[node name="CSGBox3D5" type="CSGBox3D" parent="Castle walls" unique_id=1384336636]
 transform = Transform3D(-5.6688143e-09, 0, 1.761842, 0, 2.879999, 0, -0.12968838, 0, -7.701332e-08, 0.0012978017, 1.6666663, 0.24244821)
 size = Vector3(0.1, 1, 1.1412964)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D/CSGBox3D5" unique_id=405824658]
+[node name="doorway" type="CSGCylinder3D" parent="Castle walls/CSGBox3D5" unique_id=405824658]
 transform = Transform3D(-5.3195716e-08, -0.11544242, 2.8370279e-08, 0, -2.6143792e-09, -1.1574076, 0.08958026, -3.714422e-10, 9.12829e-17, 0.012638569, -0.23882452, 0.3412474)
 operation = 2
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=361755260]
-transform = Transform3D(4.9841604, 0, 0, 0, 7.1097074, 0, 0, 0, 4.896351, -0.001308322, 7.3581104, -1.1729127)
+[node name="Tower of Doom" type="CSGCylinder3D" parent="." unique_id=361755260]
+transform = Transform3D(4.9841604, 0, 0, 0, 7.1097074, 0, 0, 0, 4.896351, -9.8109245e-05, 7.3608913, -1.1731621)
 use_collision = true
 height = 2.0499115
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCylinder3D" unique_id=1122320131]
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Tower of Doom" unique_id=1122320131]
 transform = Transform3D(0.8362255, 0, 0, 0, 1, 0, 0, 0, 0.86908424, 0, -0.29794228, 0)
 operation = 2
 height = 2.643684
 
-[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCylinder3D" unique_id=1981423378]
+[node name="entrance" type="CSGCylinder3D" parent="Tower of Doom" unique_id=1981423378]
 transform = Transform3D(0.11078253, -1.0059069, 0.008247062, -0.0047693322, 0.10535093, 0.13147844, -0.07598519, -1.4731412, 0.003771343, 0.18571883, -0.98538893, 0.37473118)
 operation = 2
 height = 0.07655525
 
-[node name="CSGCylinder3D121" type="CSGCylinder3D" parent="CSGCylinder3D" unique_id=1643058348]
+[node name="exit" type="CSGCylinder3D" parent="Tower of Doom" unique_id=1643058348]
 transform = Transform3D(0.16108483, 0, -0.0023247998, 0, 0.020224778, 0, 0.0023869756, 0, 0.16256638, 0.0022102017, 1.024874, 0.37750104)
 operation = 2
 use_collision = true
