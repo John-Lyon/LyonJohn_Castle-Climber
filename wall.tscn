@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://cp21yx0bccbjw"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oh6kn"]
+albedo_color = Color(0.44313726, 1, 1, 1)
+
 [node name="wall" type="Node3D" unique_id=679433096]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=216789073]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5648682, 0.6434076, 0)
 use_collision = true
 size = Vector3(1.5690918, 0.9251709, 0.08203125)
+material = SubResource("StandardMaterial3D_oh6kn")
