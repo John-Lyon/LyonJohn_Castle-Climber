@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://xe5s1wlk4sqi"]
+
+[ext_resource type="Script" uid="uid://csfy4ymr3go1j" path="res://Scripts/killzone.gd" id="1_3brf5"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_n74wa"]
+
+[node name="killzone" type="Area3D" unique_id=1438391029]
+script = ExtResource("1_3brf5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1149690847]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_n74wa")
+
+[node name="Timer" type="Timer" parent="." unique_id=464291693]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

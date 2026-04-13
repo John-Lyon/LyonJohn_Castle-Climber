@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://g30unvgkv3y6"]
+
+[ext_resource type="PackedScene" uid="uid://eo4vr3hvo1fo" path="res://Assets/dungeon_assets/props/banner_mounted.glb" id="1_sre4k"]
+
+[node name="banner_mounted" unique_id=1030405396 instance=ExtResource("1_sre4k")]

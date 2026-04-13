@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ls7whi5jb27t"]
+
+[ext_resource type="Texture2D" uid="uid://chex3cd8rh0x1" path="res://Assets/dungeon_assets/dungeon_albedo.png" id="1_70nrt"]
+
+[resource]
+albedo_texture = ExtResource("1_70nrt")
+metallic = 0.7

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cunsmddhyijjp"]
+
+[ext_resource type="PackedScene" uid="uid://8wmd6ulhne85" path="res://Assets/dungeon_assets/building/wall.glb" id="1_p80j0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f70vp"]
+size = Vector3(2.2376099, 1.0432129, 0.3544922)
+
+[node name="CastleWall" type="StaticBody3D" unique_id=909225428]
+
+[node name="wall2" parent="." unique_id=474649203 instance=ExtResource("1_p80j0")]
+transform = Transform3D(0.53113824, 0, 0, 0, 0.2519407, 0, 0, 0, 0.30060908, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=284964526]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020477295, 0.50878024, 0)
+shape = SubResource("BoxShape3D_f70vp")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bvmfbhecqo0x2"]
+
+[node name="castlewall and door" type="Node3D" unique_id=115426106]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1827687888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 0.43578482, 0.30981064)
+use_collision = true
+size = Vector3(0.1, 1.0835571, 9.427238)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D" unique_id=763878862]
+transform = Transform3D(-0.011257141, 0.99993664, 0, -0.99993664, -0.011257141, 0, 0, 0, 0.7345078, 0, -0.18111849, -3.212562)
+operation = 2
+radius = 0.5541992
+height = 0.47558594

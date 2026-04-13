@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cg7wbujb3bvsl"]
+
+[node name="Castlewall" type="Node3D" unique_id=452525357]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=759747882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 0.43578482, 0.30981064)
+use_collision = true
+size = Vector3(0.1, 1.0835571, 9.427238)
