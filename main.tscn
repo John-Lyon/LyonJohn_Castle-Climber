@@ -32,11 +32,11 @@ glow_enabled = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_074og"]
 albedo_color = Color(0.27022192, 0.27022192, 0.2702219, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cegan"]
-albedo_color = Color(0.48570347, 0.48570353, 0.4857034, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ycdy4"]
+albedo_color = Color(0.1728327, 0.17283267, 0.17283267, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82xsv"]
-albedo_color = Color(0.0602042, 0.40395576, 0.26725072, 1)
+albedo_color = Color(0.042618982, 0.3353333, 0.2187036, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_getpj"]
 albedo_color = Color(0.34781694, 0.34781697, 0.3478169, 1)
@@ -78,7 +78,7 @@ material = SubResource("StandardMaterial3D_074og")
 transform = Transform3D(0.83622545, 0, 0, 0, 0.9999765, 0, 0, 0, 0.86906725, 0, 0.0055805445, 0)
 operation = 2
 height = 2.0366373
-material = SubResource("StandardMaterial3D_cegan")
+material = SubResource("StandardMaterial3D_ycdy4")
 
 [node name="entrance" type="CSGCylinder3D" parent="Tower of Doom" unique_id=1981423378]
 transform = Transform3D(0.11055047, -1.0170023, 0.008932936, -0.004759303, 0.10651208, 0.14241189, -0.07582547, -1.4893801, 0.004084963, 0.15980677, -0.9853977, 0.38379738)
@@ -1381,11 +1381,9 @@ transform = Transform3D(0.9281594, -0.0009791168, 0.3721819, -0.004806973, 0.999
 
 [node name="ceiling" parent="." unique_id=1016574240 instance=ExtResource("12_yaehf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6136103, 1.1052638, 3.7276063)
-visible = false
 
 [node name="ceiling2" parent="." unique_id=1585558934 instance=ExtResource("12_yaehf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2164638, 1.1059983, 3.7276063)
-visible = false
 
 [node name="Floor" parent="." unique_id=1358013829 instance=ExtResource("13_ycdy4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3691992, 0.16996586, 3.3090553)
