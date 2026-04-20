@@ -1,0 +1,65 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dh4dgcw1hk1nc"
+path="res://.godot/imported/CastleWallsKit.gltf-3881b5063e4671ab03227484eaf857d6.scn"
+
+[deps]
+
+source_file="res://Assets/CastleWallKit/gltf/CastleWallsKit.gltf"
+dest_files=["res://.godot/imported/CastleWallsKit.gltf-3881b5063e4671ab03227484eaf857d6.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"BrickFloor": {
+"use_external/enabled": true,
+"use_external/fallback_path": "",
+"use_external/path": "res://Assets/LoafbrrAssets/CastleWallKit/materials/Brick_Floor_Mat.tres"
+},
+"BrickTrims": {
+"use_external/enabled": true,
+"use_external/fallback_path": "",
+"use_external/path": "res://Assets/LoafbrrAssets/CastleWallKit/materials/Brick_Trims_Mat.tres"
+},
+"BrickWall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "",
+"use_external/path": "res://Assets/LoafbrrAssets/CastleWallKit/materials/Brick_Wall_Mat.tres"
+},
+"WallStickers": {
+"use_external/enabled": true,
+"use_external/fallback_path": "",
+"use_external/path": "res://Assets/LoafbrrAssets/CastleWallKit/materials/DoorSticker_Mat.tres"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1

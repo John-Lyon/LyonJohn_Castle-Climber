@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://dodj3aoq2uxhm"]
 
+[ext_resource type="Texture2D" uid="uid://bkvg72qe0jqug" path="res://Assets/CastleWallKit/textures/BrickFloor/Base Color_BrickFloor.png" id="1_a2quw"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ff6l7"]
-albedo_color = Color(0.44313726, 1, 1, 1)
+albedo_texture = ExtResource("1_a2quw")
 
 [node name="mazewall1" type="Node3D" unique_id=1940295572]
 

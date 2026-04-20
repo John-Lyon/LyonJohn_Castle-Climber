@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b6f6fdwav6u6n"]
+
+[ext_resource type="PackedScene" uid="uid://crp6x6j7y5htg" path="res://Assets/Trophy.glb" id="1_48kvx"]
+[ext_resource type="Script" uid="uid://u3asn3goionq" path="res://Assets/3D_Scenes/trophy.gd" id="1_ed7wk"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ed7wk"]
+height = 0.0546875
+radius = 0.030273438
+
+[node name="trophy" type="StaticBody3D" unique_id=2084039441]
+script = ExtResource("1_ed7wk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1772890177]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12562497, 0.2183819, 0.30677634)
+shape = SubResource("CylinderShape3D_ed7wk")
+
+[node name="Trophy" parent="." unique_id=538339381 instance=ExtResource("1_48kvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12538216, 0.047396213, 0.30671474)

@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://b02ynw0pkhek5"]
+
+[ext_resource type="Texture2D" uid="uid://dcd5e86nd8y70" path="res://Assets/brackeys_vfx_bundle/flipbooks/flame_02_15x4.tga" id="1_mlrsd"]
+
+[sub_resource type="Curve" id="Curve_jbmtx"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_y3o1t"]
+curve = SubResource("Curve_jbmtx")
+
+[sub_resource type="Gradient" id="Gradient_lx5kg"]
+offsets = PackedFloat32Array(0, 0.56557375, 0.8196721, 1)
+colors = PackedColorArray(0.81960785, 0.7647059, 0, 1, 0.8032757, 0.4188504, 0.110326655, 1, 0.86845684, 0.54288095, 0.15740511, 1, 0.98039216, 0.49411765, 0.05882353, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gmee1"]
+gradient = SubResource("Gradient_lx5kg")
+
+[sub_resource type="Curve" id="Curve_tgcnd"]
+_data = [Vector2(0.040540546, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_hp74g"]
+curve = SubResource("Curve_tgcnd")
+
+[sub_resource type="Curve" id="Curve_akcn6"]
+_data = [Vector2(0, 0.6741574), 0.0, 0.0, 0, 0, Vector2(0.1081081, 1), 0.0, 0.0, 0, 0, Vector2(0.25, 1), 0.0, 0.0, 0, 0, Vector2(0.4391892, 1), 0.0, 0.0, 0, 0, Vector2(0.5472973, 0.26966298), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="CurveTexture_mw4t0"]
+curve = SubResource("Curve_akcn6")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_f0c3j"]
+emission_shape = 1
+emission_sphere_radius = 0.2
+spread = 180.0
+initial_velocity_max = 1.0
+gravity = Vector3(0, 0.8, 0)
+scale_min = 0.19999999
+scale_max = 0.39999998
+scale_curve = SubResource("CurveTexture_mw4t0")
+color_ramp = SubResource("GradientTexture1D_gmee1")
+alpha_curve = SubResource("CurveTexture_y3o1t")
+emission_curve = SubResource("CurveTexture_hp74g")
+anim_speed_min = 1.0
+anim_speed_max = 1.0
+anim_offset_min = 0.19999999
+anim_offset_max = 0.39999998
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2k825"]
+transparency = 1
+blend_mode = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_mlrsd")
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 15
+particles_anim_v_frames = 4
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_j03wk"]
+material = SubResource("StandardMaterial3D_2k825")
+
+[node name="flame" type="Node3D" unique_id=1369720887]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1631516480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.030754209, 0)
+amount = 15
+explosiveness = 0.8
+fixed_fps = 0
+process_material = SubResource("ParticleProcessMaterial_f0c3j")
+draw_pass_1 = SubResource("QuadMesh_j03wk")

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://3gpt2nk6l1wt"]
+
+[ext_resource type="Script" uid="uid://dtd4x6q0qghvd" path="res://menu.gd" id="1_e5g8k"]
+
+[node name="Menu" type="Control" unique_id=1645560653]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e5g8k")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1695505672]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 327.0
+offset_right = 497.0
+offset_bottom = 393.0
+scale = Vector2(3.3979206, 1.7462654)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=249244595]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer" unique_id=306367486]
+layout_mode = 2
+text = "Play"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=195804760]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="." unique_id=2085342716]
+layout_mode = 0
+offset_left = 368.00003
+offset_top = 106.0
+offset_right = 613.0
+offset_bottom = 181.0
+scale = Vector2(1.24, 1.4400003)
+text = "Castle Climber 
+
+Reach the top to collect the idol"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

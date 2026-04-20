@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bfykj3bpx2kqu"]
+
+[ext_resource type="Texture2D" uid="uid://bmo6fnav2r3qh" path="res://Assets/CastleWallKit/textures/BrickTrims/Base Color_BrickTrims.png" id="1_jnvrf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s3415"]
+albedo_texture = ExtResource("1_jnvrf")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_th25f"]
+height = 0.1340332
+radius = 2.7280273
+
+[node name="roof" type="StaticBody3D" unique_id=536151609]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1838944898]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0.0029850006, 0.27491987, 0.0039035082)
+radius = 2.4
+height = 0.09765625
+material = SubResource("StandardMaterial3D_s3415")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCylinder3D" unique_id=156784858]
+transform = Transform3D(0.5214336, 0, 0, 0, 0.5214336, 0, 0, 0, 0.5214336, 1.5987746, -0.04449916, -0.0039035082)
+operation = 2
+height = 0.45239258
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1571207895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27086055, 0)
+shape = SubResource("CylinderShape3D_th25f")

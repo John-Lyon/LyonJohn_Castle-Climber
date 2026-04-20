@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://be6j45d1gkxko"]
+
+[ext_resource type="Texture2D" uid="uid://bmo6fnav2r3qh" path="res://Assets/CastleWallKit/textures/BrickTrims/Base Color_BrickTrims.png" id="1_jetro"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s3415"]
+albedo_texture = ExtResource("1_jetro")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_th25f"]
+height = 0.1340332
+radius = 1.8964844
+
+[node name="platform" type="StaticBody3D" unique_id=536151609]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1838944898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01748389, 0.25272858, 0)
+height = 0.09765625
+material = SubResource("StandardMaterial3D_s3415")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1571207895]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2518741, 0)
+shape = SubResource("CylinderShape3D_th25f")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://btq3rt34vldgc"]
+
+[ext_resource type="PackedScene" uid="uid://beggw2qukufnk" path="res://Assets/CastleWallKit/scenes/Walls/Wall/wall_wall.tscn" id="1_jqwry"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n3kr5"]
+size = Vector3(0.31527424, 1.0483446, 0.17822266)
+
+[node name="wall2" type="StaticBody3D" unique_id=1406164516]
+
+[node name="Wall_Wall" parent="." unique_id=1183697766 instance=ExtResource("1_jqwry")]
+transform = Transform3D(0.05469882, 0, 0, 0, 0.18665926, 0, 0, 0, 1, 1.4158086, 0, 0.40410662)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1753650997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2484937, 0.5518575, 0.41088867)
+shape = SubResource("BoxShape3D_n3kr5")

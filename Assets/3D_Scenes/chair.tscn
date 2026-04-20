@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dsmutb113jaym"]
+
+[ext_resource type="PackedScene" uid="uid://br6yobb8ilbca" path="res://Assets/dungeon_assets/props/chair.glb" id="1_fgtiv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4gyxa"]
+size = Vector3(0.78796387, 1.2723389, 0.7399597)
+
+[node name="chair" type="StaticBody3D" unique_id=1081393405]
+
+[node name="chair2" parent="." unique_id=107323013 instance=ExtResource("1_fgtiv")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1801477643]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.00982666, 0.12674814, -0.002682209)
+shape = SubResource("BoxShape3D_4gyxa")

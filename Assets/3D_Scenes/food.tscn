@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d2bbil1l2dv47"]
+
+[ext_resource type="PackedScene" uid="uid://wwkevgf7gas3" path="res://Assets/dungeon_assets/props/plate_food.glb" id="1_eeg1t"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_mkygr"]
+height = 0.74072266
+radius = 0.63720703
+
+[node name="food" type="StaticBody3D" unique_id=11168071]
+
+[node name="plate_food" parent="." unique_id=1412336158 instance=ExtResource("1_eeg1t")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1629257142]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.035320394, 0)
+shape = SubResource("CylinderShape3D_mkygr")

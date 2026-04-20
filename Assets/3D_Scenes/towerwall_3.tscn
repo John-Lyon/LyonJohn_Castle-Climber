@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b13sm66ade14t"]
+
+[ext_resource type="PackedScene" uid="uid://8wmd6ulhne85" path="res://Assets/dungeon_assets/building/wall.glb" id="1_velx7"]
+[ext_resource type="PackedScene" uid="uid://beggw2qukufnk" path="res://Assets/CastleWallKit/scenes/Walls/Wall/wall_wall.tscn" id="2_14ij5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8qcbo"]
+size = Vector3(1.6993408, 13.676872, 0.9934082)
+
+[node name="Towerwall3" type="StaticBody3D" unique_id=1327512765]
+
+[node name="wall2" parent="." unique_id=474649203 instance=ExtResource("1_velx7")]
+transform = Transform3D(0.449, 0, 0, 0, 3.4383633, 0, 0, 0, 0.56311667, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1060925421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027160645, 6.8500633, 0.010620117)
+shape = SubResource("BoxShape3D_8qcbo")
+
+[node name="Wall_Wall" parent="." unique_id=1371160612 instance=ExtResource("2_14ij5")]
+transform = Transform3D(0.29871643, 0, 0, 0, 2.2750626, 0, 0, 0, 1, 0.9042074, 0.065846324, 0.28220317)
+
+[node name="Wall_Wall2" parent="." unique_id=1183355893 instance=ExtResource("2_14ij5")]
+transform = Transform3D(-0.0065963008, 0, -1.0516968, 0, 2.2932777, 0, 0.09071319, 0, -0.07647519, 0.9037277, 0, 0.28097478)
+
+[node name="Wall_Wall3" parent="." unique_id=1420308368 instance=ExtResource("2_14ij5")]
+transform = Transform3D(-0.0026268214, 0, -1.0540336, 0, 2.2926893, 0, 0.09091477, 0, -0.030454446, -0.9065116, 0, 0.28097478)
+
+[node name="Wall_Wall4" parent="." unique_id=971775258 instance=ExtResource("2_14ij5")]
+transform = Transform3D(8.828031e-06, -0.30144504, -0.007030506, -2.4483482e-12, 0.0021203174, -0.9995263, 0.084297486, 3.1571202e-05, 7.363931e-07, 0.9164772, 0, 0.22724032)

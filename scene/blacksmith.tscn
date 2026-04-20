@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cfxkatomeoufo"]
+
+[ext_resource type="ArrayMesh" uid="uid://1oqd32jaxm73" path="res://Assets/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/buildings/blue/building_blacksmith_blue.obj" id="1_qft72"]
+
+[node name="blacksmith" type="Node3D" unique_id=63739338]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="BuildingBlacksmithBlue" type="MeshInstance3D" parent="." unique_id=1191486588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0, 0.6)
+mesh = ExtResource("1_qft72")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c1dvlwq0tm31l"]
+
+[ext_resource type="ArrayMesh" uid="uid://cuul2g4cgf5r" path="res://Assets/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/buildings/blue/building_barracks_blue.obj" id="1_x1h3p"]
+
+[node name="barracks" type="Node3D" unique_id=1290739746]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="BuildingBarracksBlue" type="MeshInstance3D" parent="." unique_id=142597491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46639407, 0, 0.33111644)
+mesh = ExtResource("1_x1h3p")

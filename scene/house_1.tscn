@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c31kc3lsq2ree"]
+
+[ext_resource type="ArrayMesh" uid="uid://1vhmss4di15" path="res://Assets/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/buildings/blue/building_home_A_blue.obj" id="1_qgj2f"]
+
+[node name="house1" type="Node3D" unique_id=1917673249]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="BuildingHomeABlue" type="MeshInstance3D" parent="." unique_id=778962205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0.3)
+mesh = ExtResource("1_qgj2f")

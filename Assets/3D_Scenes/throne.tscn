@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cyhyb7bwlvkjk"]
+
+[ext_resource type="PackedScene" uid="uid://beicavrgufqby" path="res://Assets/simple_throne_-_nelamon.glb" id="1_qwldq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lc5nk"]
+size = Vector3(0.638855, 1.3411255, 0.62109375)
+
+[node name="throne" type="StaticBody3D" unique_id=620065636]
+
+[node name="Sketchfab_Scene" parent="." unique_id=916062374 instance=ExtResource("1_qwldq")]
+transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.12, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=117534868]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.0015716553, 0.3368249, 0)
+shape = SubResource("BoxShape3D_lc5nk")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://daidkgwaertrs"]
+
+[ext_resource type="ArrayMesh" uid="uid://bmyyontfgnq4t" path="res://Assets/KayKit_Medieval_Hexagon_Pack_1.0_FREE/Assets/obj/buildings/blue/building_church_blue.obj" id="1_ay6lk"]
+
+[node name="church" type="Node3D" unique_id=1422085822]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="BuildingChurchBlue" type="MeshInstance3D" parent="." unique_id=1107694915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0, 0.6)
+mesh = ExtResource("1_ay6lk")

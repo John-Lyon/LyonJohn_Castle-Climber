@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cv8rijeow5bo4"]
+
+[ext_resource type="PackedScene" uid="uid://bte6g4dc06ipa" path="res://Assets/dungeon_assets/props/keg_decorated.glb" id="1_anl00"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f70vp"]
+size = Vector3(3.465088, 2.1812744, 2.571289)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1982304013]
+
+[node name="keg_decorated2" parent="." unique_id=35545373 instance=ExtResource("1_anl00")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=453695732]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.23471266, 0)
+shape = SubResource("BoxShape3D_f70vp")

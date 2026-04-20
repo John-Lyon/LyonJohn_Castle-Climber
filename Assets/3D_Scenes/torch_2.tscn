@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d0pmbp74egsna"]
+
+[ext_resource type="PackedScene" uid="uid://cuduu0arpcjjp" path="res://Assets/dungeon_assets/props/torch_mounted.glb" id="1_jethv"]
+[ext_resource type="PackedScene" uid="uid://d181ilhi8hhmo" path="res://Scripts/flame.tscn" id="2_ej7kr"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_f70vp"]
+height = 1.0058105
+radius = 0.30078125
+
+[node name="torch2" type="StaticBody3D" unique_id=1020866076]
+
+[node name="torch_mounted2" parent="." unique_id=396130030 instance=ExtResource("1_jethv")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.4821812, 0.63790846, 0.53598404)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1361235938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48092762, 0.75043094, 0.6165157)
+light_color = Color(1, 0.5411765, 0.09019608, 1)
+light_energy = 2.792
+light_indirect_energy = 2.0
+shadow_transmittance_bias = -4.386
+shadow_opacity = 0.5
+omni_range = 7.962471
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1808879818]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.47446728, 0.67352843, 0.5993887)
+shape = SubResource("CylinderShape3D_f70vp")
+
+[node name="flame" parent="." unique_id=1369720887 instance=ExtResource("2_ej7kr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45346934, 0.7741095, 0.6438234)
